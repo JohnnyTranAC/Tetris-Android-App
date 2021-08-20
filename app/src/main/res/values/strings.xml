@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Tetris</string>
+    <string name="Title">𝕋𝕚𝕞𝕖 𝕥𝕠 𝕋𝕖𝕥𝕣𝕚𝕤</string>
+    <string name="play_button">PLAY</string>
+
+    <string name="Saved_Piece">Ｈｏｌｄ</string>
+    <string name="Score">𝕊𝕔𝕠𝕣𝕖</string>
+    <string name="Next_Piece">Ｎｅｘｔ</string>
+
+    <string name="L_Button">L_Button</string>
+    <string name="R_Button">R_Button</string>
+    <string name="Hold_Button">Hold</string>
+
+    <string name="Lines_Cleared">Line: %1$s</string>
+    <string name="Line_String">Line: </string>
+
+    <string name="Level_Status">Level: %1$s</string>
+    <string name="Level_String">Level: </string>
+
+    <string name="Music_Switch">♫</string>
+    <string name="SFX_Switch">SFX </string>
+</resources>
