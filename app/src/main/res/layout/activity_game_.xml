@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0BEC5"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/saved_piece"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/Saved_Piece"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/squareColor"
+        android:textStyle="bold" />
+
+    <com.example.tetris.views.SavedView
+        android:id="@+id/SavedView"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        app:saved_color="@color/squareColor"
+        app:saved_size="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="@string/Next_Piece"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/squareColor"
+        android:textStyle="bold" />
+
+    <com.example.tetris.views.NextView
+        android:id="@+id/NextView"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        app:next_color="@color/squareColor"
+        app:next_size="10dp" />
+
+    <TextView
+        android:id="@+id/score_text"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/NextView"
+        android:layout_toEndOf="@+id/saved_piece"
+        android:gravity="center"
+        android:text="@string/Score"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/right_button"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/right_arrow" />
+
+    <ImageButton
+        android:id="@+id/left_button"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/right_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <ImageButton
+        android:id="@+id/down_button"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignTop="@+id/left_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/left_button"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/down_arrow" />
+
+    <ImageButton
+        android:id="@+id/rotate"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignTop="@+id/right_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toStartOf="@+id/right_button"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/undo_icon" />
+
+    <!--width: 300dp  height: 550dp-->
+    <Button
+        android:id="@+id/Hold_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="135dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/Hold_Button"
+        android:textColor="@android:color/transparent" />
+
+    <com.example.tetris.views.CustomView
+        android:id="@+id/customView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="100dp"
+        app:square_color="@color/squareColor"
+        app:square_size="25dp" />
+
+    <TextView
+        android:id="@+id/line_text"
+        android:layout_width="106dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/score_text"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/NextView"
+        android:gravity="center"
+        android:text="@string/Line_String"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/level_text"
+        android:layout_width="102dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/score_text"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toStartOf="@+id/line_text"
+        android:layout_toEndOf="@+id/SavedView"
+        android:gravity="center"
+        android:text="@string/Level_String"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHighlight="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/music_switch"
+        android:layout_width="88dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="50dp"
+        android:layout_toStartOf="@+id/sfx_switch"
+        android:checked="true"
+        android:gravity="center"
+        android:text="@string/Music_Switch"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/sfx_switch"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/SFX_Switch"
+        android:checked="true"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

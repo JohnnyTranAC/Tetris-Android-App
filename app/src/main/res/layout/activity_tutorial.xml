@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0BEC5"
+    tools:context=".Tutorial">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="20dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:text="『Game Features』"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="37dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="150dp"
+        android:text="Game will speed up"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="161dp"
+        android:layout_marginEnd="26dp"
+        android:text="Tapping INSIDE the Tetris Well\nwill save the current falling\npiece"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="10dp"
+        android:text="Swiping left/right OUTSIDE the\nTetris Well will move the current\nfalling piece left/right"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="523dp"
+        android:layout_marginEnd="10dp"
+        android:text="After every 10 rows are cleared,\nlevel will increase, giving more\npoints and faster falling pieces"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="379dp"
+        android:layout_marginEnd="10dp"
+        android:text="Swiping down OUTSIDE the\nTetris Well will move the current\nfalling piece to the bottommost\nspace"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="25dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="371dp"
+        android:text="1)\n\n2)\n\n\n3)\n\n\n4)\n\n\n\n5)\n\n"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="31dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/goBack"
+        android:layout_width="142dp"
+        android:layout_height="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="654dp"
+        android:layout_marginEnd="134dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="GO BACK"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+</RelativeLayout>
